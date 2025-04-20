@@ -143,7 +143,7 @@ resource "aws_instance" "tf_public_ec2" {
   subnet_id              = aws_subnet.public.id
   associate_public_ip_address = true
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
-  key_name               = "miles-key2"
+  key_name               = # put your key here
   tags = { Name = "Terraform Public EC2"}
 }
 
